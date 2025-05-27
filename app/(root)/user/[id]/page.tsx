@@ -44,7 +44,7 @@ const UserProfile = async ({ params }: UserProfileProps) => {
 
         <div className="flex-1 flex flex-col gap-5 lg:-mt-5">
           <p className="text-30-bold">
-            {session.id === id ? "Your" : "All"} Startups
+            {session?.id === id ? "Your" : "All"} Startups
           </p>
           <ul className="card_grid-sm">
             <Suspense fallback={<StartupCardSkeleton />}>
